@@ -1,0 +1,201 @@
+/* стрелы */
+.pic:hover {
+  margin-top: 15%;
+  padding: 0 0 0 0;
+  animation: slidein 3s infinite linear;
+}
+
+@keyframes slidein {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.pic1:hover {
+  margin-top: 50%;
+  padding: 0 0 0 0;
+  animation: slidein_1 3s infinite linear;
+}
+
+@keyframes slidein_1 {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+/* кружочки */
+.c1 {
+  position: relative;
+  width: 4%;
+  padding: 0.6%;
+  left: 3%;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* квадратики */
+.k1 {
+  position: relative;
+  width: 4%;
+  padding: 0.6%;
+  left: 3%;
+  animation: left 4s cubic-bezier(0.3, -0.7, 0.3, 1) infinite;
+}
+
+@keyframes left {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 4%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+/* девушки */
+.small-rotate:hover {
+  animation: small 3s ease infinite;
+}
+
+@keyframes small {
+  0% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: 12deg;
+  }
+  60% {
+    rotate: -12deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.blur-image {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  filter: blur(5px);
+  transition: 1s;
+}
+.blur-image:hover {
+  filter: blur(0);
+}
+
+/* дерево */
+.tree {
+  animation-name: grow-to-bottom-right;
+  position: relative;
+  width: 4%;
+  padding: 0 0 0 0;
+  left: 3%;
+  margin-bottom: 1%;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes grow-to-bottom-right {
+  from {
+    top: 0;
+    left: 0;
+    transform: scale(0.2);
+  }
+
+  to {
+    width: 13%;
+    top: 5%;
+    left: 2%;
+    transform: scale(0.5);
+  }
+}
+/* звезда */
+.block_1 {
+  width: 100px;
+  height: 100px;
+  padding: 0 0 0 0;
+  transform: scale(0.85);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.85);
+  }
+}
+
+/* бегущие строки */
+.block div {
+  animation: running-text 10s linear infinite;
+}
+
+.text {
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 0;
+  border: 0;
+  top: 0;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 300%;
+  white-space: nowrap;
+}
+
+@keyframes running-text {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+.block1 div {
+  animation: running-text1 10s linear infinite;
+}
+
+.text1 {
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 0;
+  border: 0;
+  bottom: -5%;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 300%;
+  white-space: nowrap;
+}
+
+@keyframes running-text1 {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
