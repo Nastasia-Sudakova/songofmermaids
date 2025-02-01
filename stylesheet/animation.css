@@ -1,40 +1,52 @@
 /* стрелы */
-.pic:hover {
-  margin-top: 15%;
+.pic,
+.pic2 {
   padding: 0 0 0 0;
-  animation: slidein 3s infinite linear;
+  position: absolute;
+  animation: slidein 2.7s infinite linear;
+}
+
+.pic:hover,
+.pic1:hover,
+.pic2:hover,
+.pic3:hover {
+  animation-play-state: paused;
 }
 
 @keyframes slidein {
   from {
-    left: 0%;
+    left: -25vw;
   }
   to {
-    left: 100%;
+    left: 11vw;
   }
 }
 
-.pic1:hover {
-  margin-top: 50%;
+.pic1,
+.pic3 {
   padding: 0 0 0 0;
-  animation: slidein_1 3s infinite linear;
+  position: absolute;
+  animation: slidein_1 2.7s infinite linear;
 }
 
 @keyframes slidein_1 {
   from {
-    right: 0%;
+    right: -25vw;
   }
   to {
-    right: 100%;
+    right: 12vw;
   }
 }
 
 /* кружочки */
+.container2 {
+  position: absolute;
+}
+
 .c1 {
   position: relative;
-  width: 4%;
-  padding: 0.6%;
-  left: 3%;
+  padding: 0.6vw;
+  left: 3vw;
   animation-name: rotation;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -51,28 +63,41 @@
 }
 
 /* квадратики */
+.container3 {
+  position: absolute;
+}
+
 .k1 {
   position: relative;
-  width: 4%;
-  padding: 0.6%;
-  left: 3%;
+  padding: 0.6vw;
+  left: 3vw;
   animation: left 4s cubic-bezier(0.3, -0.7, 0.3, 1) infinite;
 }
 
 @keyframes left {
   0% {
-    left: 0%;
+    left: 0vw;
   }
   50% {
-    left: 4%;
+    left: 2.1vw;
   }
   100% {
-    left: 0%;
+    left: 0vw;
   }
 }
 
 /* девушки */
-.small-rotate:hover {
+.small-rotate,
+.small-rotate1,
+.small-rotate2,
+.small-rotate3 {
+  position: absolute;
+}
+
+.small-rotate:hover,
+.small-rotate1:hover,
+.small-rotate2:hover,
+.small-rotate3:hover {
   animation: small 3s ease infinite;
 }
 
@@ -91,24 +116,32 @@
   }
 }
 
-.blur-image {
+.blur-image,
+.blur-image1,
+.blur-image2,
+.blur-image3 {
   padding: 0 0 0 0;
-  margin: 0 0 0 0;
   filter: blur(5px);
   transition: 1s;
+  position: absolute;
 }
-.blur-image:hover {
+
+.blur-image:hover,
+.blur-image1:hover,
+.blur-image2:hover,
+.blur-image3:hover {
   filter: blur(0);
 }
 
 /* дерево */
-.tree {
+.tree,
+.tree1,
+.tree2,
+.tree3 {
   animation-name: grow-to-bottom-right;
-  position: relative;
-  width: 4%;
+  position: absolute;
   padding: 0 0 0 0;
-  left: 3%;
-  margin-bottom: 1%;
+  left: 3vw;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -118,23 +151,25 @@
   from {
     top: 0;
     left: 0;
-    transform: scale(0.2);
+    transform: scale(0.15);
   }
 
   to {
-    width: 13%;
-    top: 5%;
-    left: 2%;
+    width: 13vw;
+    top: 5vw;
+    left: 2vw;
     transform: scale(0.5);
   }
 }
 /* звезда */
-.block_1 {
-  width: 100px;
-  height: 100px;
+.block_1,
+.block_2,
+.block_3,
+.block_4 {
   padding: 0 0 0 0;
   transform: scale(0.85);
-  animation: pulse 4s ease-in-out infinite;
+  animation: pulse 7s ease-in-out infinite;
+  position: absolute;
 }
 
 @keyframes pulse {
@@ -142,7 +177,7 @@
     transform: scale(0.85);
   }
   50% {
-    transform: scale(1);
+    transform: scale(1.1);
   }
   to {
     transform: scale(0.85);
@@ -150,52 +185,52 @@
 }
 
 /* бегущие строки */
-.block div {
+.block {
   animation: running-text 10s linear infinite;
+  position: absolute;
 }
 
 .text {
   display: inline-block;
   padding: 0 0 0 0;
-  margin: 0;
+
   border: 0;
   top: 0;
   color: #f1f1f1;
   text-align: center;
-  font-size: 300%;
+
   white-space: nowrap;
 }
 
 @keyframes running-text {
   0% {
-    transform: translateX(120%);
+    transform: translateX(70%);
   }
   100% {
-    transform: translateX(-120%);
+    transform: translateX(-50%);
   }
 }
 
-.block1 div {
+.block1 {
   animation: running-text1 10s linear infinite;
+  position: absolute;
 }
 
 .text1 {
   display: inline-block;
   padding: 0 0 0 0;
-  margin: 0;
   border: 0;
   bottom: -5%;
   color: #f1f1f1;
   text-align: center;
-  font-size: 300%;
   white-space: nowrap;
 }
 
 @keyframes running-text1 {
   0% {
-    transform: translateX(120%);
+    transform: translateX(70%);
   }
   100% {
-    transform: translateX(-120%);
+    transform: translateX(-50%);
   }
 }
