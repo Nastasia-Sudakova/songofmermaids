@@ -1,15 +1,12 @@
 /* стрелы */
-.pic,
-.pic2 {
+.pic {
   padding: 0 0 0 0;
   position: absolute;
   animation: slidein 2.7s infinite linear;
 }
 
 .pic:hover,
-.pic1:hover,
-.pic2:hover,
-.pic3:hover {
+.pic1:hover {
   animation-play-state: paused;
 }
 
@@ -22,8 +19,7 @@
   }
 }
 
-.pic1,
-.pic3 {
+.pic1 {
   padding: 0 0 0 0;
   position: absolute;
   animation: slidein_1 2.7s infinite linear;
