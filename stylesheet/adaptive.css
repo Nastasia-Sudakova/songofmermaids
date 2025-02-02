@@ -4,7 +4,10 @@
     background-image: url("../img/mat/360.svg");
     background-repeat: no-repeat;
   }
-
+.blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
+  
   .blur-image {
     height: 450vw;
     margin-top: 25.7vw;
@@ -143,6 +146,10 @@
     background-image: url("../img/mat/414.svg");
     background-repeat: no-repeat;
   }
+
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
 
   .blur-image {
     height: 450vw;
@@ -283,6 +290,10 @@
     background-repeat: no-repeat;
   }
 
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
+
   .blur-image {
     height: 450vw;
     margin-top: 25.7vw;
@@ -421,6 +432,10 @@
     background-image: url("../img/mat/1024.svg");
     background-repeat: no-repeat;
   }
+
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
 
   .blur-image1 {
     display: none;
@@ -609,6 +624,10 @@
     background-repeat: no-repeat;
   }
 
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
+
   .blur-image {
     height: 450vw;
     margin-top: 25.7vw;
@@ -747,6 +766,10 @@
     background-image: url("../img/mat/1366_768.svg")
     background-repeat: no-repeat;
   }
+
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
 
   .blur-image {
     height: 450vw;
@@ -887,6 +910,10 @@
     background-repeat: no-repeat;
   }
 
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
+  
   .blur-image1 {
     height: 100vw;
     margin-top: 28.7vw;
@@ -1073,6 +1100,10 @@
     background-image: url("../img/mat/1440.svg");
     background-repeat: no-repeat;
   }
+
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
+    display: none;
+  } 
 
   .blur-image2 {
     display: none;
@@ -1452,53 +1483,9 @@
     background-repeat: no-repeat;
   }
 
-  .blur-image1 {
+  .blur-image1, .small-rotate1, .tree1, .block_2, .blur-image2, .small-rotate2, .tree2, .block_3, .blur-image3, .small-rotate3, .tree3, .block_4  {
     display: none;
-  }
-
-  .small-rotate1 {
-    display: none;
-  }
-
-  .tree1 {
-    display: none;
-  }
-
-  .block_2 {
-    display: none;
-  }
-
-  .blur-image2 {
-    display: none;
-  }
-
-  .small-rotate2 {
-    display: none;
-  }
-
-  .tree2 {
-    display: none;
-  }
-
-  .block_3 {
-    display: none;
-  }
-
-  .blur-image3 {
-    display: none;
-  }
-
-  .small-rotate3 {
-    display: none;
-  }
-
-  .tree3 {
-    display: none;
-  }
-
-  .block_4 {
-    display: none;
-  }
+  } 
   
   .blur-image {
     height: 450vw;
