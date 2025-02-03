@@ -1060,6 +1060,10 @@
     display: block;
   }
 
+  .rotate {
+    display: none;
+  }
+
   .tree_1 {
     width: 35vw;
     margin-left: 80vw;
