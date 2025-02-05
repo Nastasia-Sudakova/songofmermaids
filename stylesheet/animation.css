@@ -1,0 +1,259 @@
+/* стрелы */
+.arrow {
+  padding: 0 0 0 0;
+  position: absolute;
+  animation: slidein 5s infinite linear;
+  width: 100vw;
+}
+
+@keyframes slidein {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 100vw;
+  }
+}
+
+.arrow_1 {
+  padding: 0 0 0 0;
+  position: absolute;
+  animation: slidein_1 5s infinite linear;
+  width: 100vw;
+}
+
+@keyframes slidein_1 {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 100vw;
+  }
+}
+
+.arrow_2 {
+  padding: 0 0 0 0;
+  position: absolute;
+  animation: slidein1 5s infinite linear;
+  width: 100vw;
+}
+
+@keyframes slidein1 {
+  from {
+    bottom: -00vw;
+  }
+  to {
+    bottom: 100vw;
+  }
+}
+
+.arrow_3 {
+  padding: 0 0 0 0;
+  position: absolute;
+  animation: slidein2 5s infinite linear;
+}
+
+@keyframes slidein2 {
+  from {
+    top: -100vw;
+  }
+  to {
+    top: 100vw;
+  }
+}
+
+/* кружочки */
+.container2 {
+  position: absolute;
+}
+
+.c1 {
+  position: relative;
+  padding: 0.6vw;
+  left: 3vw;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* квадратики */
+.container3 {
+  position: absolute;
+}
+
+.k1 {
+  position: relative;
+  padding: 0.6vw;
+  left: 3vw;
+  animation: left 4s cubic-bezier(0.3, -0.7, 0.3, 1) infinite;
+}
+
+@keyframes left {
+  0% {
+    left: 0vw;
+  }
+  50% {
+    left: 2.1vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+
+/* девушки */
+.rotate,
+.rotate1 {
+  position: absolute;
+}
+
+.rot {
+  width: 15vw;
+}
+
+.rot1 {
+  width: 10vw;
+}
+
+.rotate:hover,
+.rotate1:hover {
+  animation: pit 3s ease infinite;
+}
+
+@keyframes pit {
+  0% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: 12deg;
+  }
+  60% {
+    rotate: -12deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.blur {
+  padding: 0 0 0 0;
+  filter: blur(5px);
+  transition: 1s;
+  position: absolute;
+}
+
+.blur:hover {
+  filter: blur(0);
+}
+
+/* дерево */
+.tree_1 {
+  animation-name: grow-to-bottom-right;
+  position: absolute;
+  padding: 0 0 0 0;
+  left: 3vw;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.tree {
+  width: 10vw;
+}
+
+@keyframes grow-to-bottom-right {
+  from {
+    top: 0;
+    left: 0;
+    transform: scale(0.15);
+  }
+
+  to {
+    width: 13vw;
+    top: 5vw;
+    left: 2vw;
+    transform: scale(0.5);
+  }
+}
+/* звезда */
+.star {
+  padding: 0 0 0 0;
+  transform: scale(0.85);
+  animation: pulse 7s ease-in-out infinite;
+  position: absolute;
+}
+
+.st {
+  width: 10vw;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(0.85);
+  }
+}
+
+/* бегущие строки */
+.block {
+  animation: running-text 10s linear infinite;
+  position: absolute;
+}
+
+.text {
+  display: inline-block;
+  padding: 0 0 0 0;
+  border: 0;
+  top: 0;
+  color: #f1f1f1;
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+@keyframes running-text {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.block1 {
+  animation: running-text1 10s linear infinite;
+  position: absolute;
+}
+
+.text1 {
+  display: inline-block;
+  padding: 0 0 0 0;
+  border: 0;
+  bottom: -5%;
+  color: #f1f1f1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@keyframes running-text1 {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
