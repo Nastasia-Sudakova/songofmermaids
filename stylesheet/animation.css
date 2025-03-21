@@ -127,7 +127,7 @@
 
 .rotate:hover,
 .rotate1:hover {
-  animation: pit 3s ease infinite;
+  animation: pit 7s ease infinite;
 }
 
 @keyframes pit {
