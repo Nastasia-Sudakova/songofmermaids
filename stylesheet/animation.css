@@ -114,6 +114,7 @@
 .rotate,
 .rotate1 {
   position: absolute;
+  height: 20vw;
 }
 
 .rot {
@@ -149,6 +150,7 @@
   filter: blur(5px);
   transition: 1s;
   position: absolute;
+  height: 20vw;
 }
 
 .blur:hover {
