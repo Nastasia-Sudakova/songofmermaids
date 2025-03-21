@@ -247,6 +247,7 @@
   color: #f1f1f1;
   text-align: center;
   white-space: nowrap;
+  overflow-x: hidden;
 }
 
 @keyframes running-text1 {
